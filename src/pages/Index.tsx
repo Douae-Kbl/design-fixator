@@ -12,23 +12,22 @@ import {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-50/95 p-4 md:p-6">
+    <div className="min-h-screen bg-blue-50/50 p-4 md:p-6">
       {/* Header */}
       <header className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
-          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
-            <ChevronLeft className="w-5 h-5 text-gray-600" />
+          <button className="p-2 hover:bg-white/80 rounded-full transition-colors">
+            <ChevronLeft className="w-5 h-5 text-blue-600" />
           </button>
-          <h1 className="text-lg font-medium text-gray-800">Shoppers Drug Mart</h1>
+          <h1 className="text-lg font-medium text-blue-900">Shoppers Drug Mart</h1>
         </div>
       </header>
 
       {/* Main Content */}
       <div className="max-w-2xl mx-auto">
-        {/* Single Card Layout */}
-        <Card className="overflow-hidden bg-white/80 backdrop-blur-sm shadow-sm">
+        <Card className="overflow-hidden bg-white/90 backdrop-blur-sm shadow-lg border border-blue-100">
           {/* Image Section */}
-          <div className="border-b border-gray-100">
+          <div className="border-b border-blue-50">
             <img 
               src="/lovable-uploads/de3a4d7f-8714-4f1d-b41e-d5c9080da678.png" 
               alt="Prescription"
@@ -37,12 +36,12 @@ const Index = () => {
           </div>
 
           {/* Content Section */}
-          <div className="p-6 space-y-6">
+          <div className="p-8 space-y-6">
             {/* Patient Selection */}
             <div className="space-y-2">
-              <label className="text-sm text-gray-500">Patient Name</label>
+              <label className="text-sm font-medium text-blue-700">Patient Name</label>
               <Select defaultValue="malak">
-                <SelectTrigger className="w-full">
+                <SelectTrigger className="w-full bg-white border-blue-100">
                   <SelectValue placeholder="Select patient" />
                 </SelectTrigger>
                 <SelectContent>
@@ -55,22 +54,22 @@ const Index = () => {
 
             {/* Order Details */}
             <div className="grid gap-4 md:grid-cols-2">
-              <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                <p className="text-sm text-gray-500 mb-1">Order Number</p>
-                <p className="text-base font-medium text-gray-900">#SHO324000575</p>
+              <div className="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                <p className="text-sm text-blue-600 mb-1">Order Number</p>
+                <p className="text-base font-medium text-blue-900">#SHO324000575</p>
               </div>
 
-              <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                <p className="text-sm text-gray-500 mb-1">RX Number</p>
-                <p className="text-base font-medium text-gray-900">[22222333, 8888888]</p>
+              <div className="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+                <p className="text-sm text-blue-600 mb-1">RX Number</p>
+                <p className="text-base font-medium text-blue-900">[22222333, 8888888]</p>
               </div>
             </div>
 
             {/* Address */}
-            <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-              <p className="text-sm text-gray-500 mb-1">Pickup Location</p>
-              <p className="text-base font-medium text-gray-900">678 Queen Street East,</p>
-              <p className="text-sm text-gray-500">Toronto, M4M 1G8</p>
+            <div className="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
+              <p className="text-sm text-blue-600 mb-1">Pickup Location</p>
+              <p className="text-base font-medium text-blue-900">678 Queen Street East,</p>
+              <p className="text-sm text-blue-600">Toronto, M4M 1G8</p>
             </div>
 
             {/* Actions */}
@@ -82,7 +81,7 @@ const Index = () => {
               </Button>
               <Button 
                 variant="outline"
-                className="w-full flex items-center justify-center gap-2 border-blue-200 hover:bg-blue-50"
+                className="w-full flex items-center justify-center gap-2 border-blue-200 hover:bg-blue-50 text-blue-700"
               >
                 <Camera className="w-4 h-4" />
                 Retake Picture
